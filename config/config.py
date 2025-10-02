@@ -15,7 +15,7 @@ API_HASH = getenv("API_HASH")
 BOT_TOKEN = getenv("BOT_TOKEN")
 
 # Get Your bot username
-BOT_USERNAME = getenv("BOT_USERNAME" , "shimzukaXmusic_robot")
+BOT_USERNAME = getenv("BOT_USERNAME" , "toxicXmusic_bot")
 
 # Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
@@ -56,7 +56,7 @@ LOGGER_ID = int(getenv("LOGGER_ID", None))
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", 8158429107).split())
+    map(int, getenv("OWNER_ID", 8299512910).split())
 )  # Input type must be interger
 
 ## Fill these variables if you're deploying on heroku.
@@ -67,7 +67,7 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/sparshshivhare2007-pixel/ChampuMusic.git",
+    "https://github.com/sparshshivhare2007-pixel/ChampuMusic",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv(
@@ -76,10 +76,10 @@ GIT_TOKEN = getenv(
 
 # Only  Links formats are  accepted for this Var value.
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", "https://t.me/SHIMZUKA_NETWORK"
+    "SUPPORT_CHANNEL", "https://t.me/RIY_A_NETWORK"
 )  # Example:- https://t.me/SHIMZUKA_NETWORK
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", "https://t.me/SHIMZUKA_SUPPORT"
+    "SUPPORT_GROUP", "https://t.me/RIYA_X_SUPPOR"
 )  # Example:- https://t.me/SHIMZUKA_SUPPORT
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
 AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", True)
@@ -101,7 +101,7 @@ TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", 5))
 
 
 # Your Github Repo.. Will be shown on /start Command
-GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/sparshshivhare2007-pixel/ChampuMusic.git")
+GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/sparshshivhare2007-pixel/ChampuMusic")
 
 
 # Spotify Client.. Get it from https://developer.spotify.com/dashboard
@@ -171,32 +171,32 @@ autoclean = []
 
 START_IMG_URL = getenv(
     "START_IMG_URL",
-    "https://telegra.ph/file/d3e855bc548a1ce9649e7.jpg",
+    "https://files.catbox.moe/bc5bx1.jpg",
 )
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "https://telegra.ph/file/33591be403ae3eaae7217.jpg",
+    "https://files.catbox.moe/bc5bx1.jpg",
 )
 
 PLAYLIST_IMG_URL = getenv(
     "PLAYLIST_IMG_URL",
-    "https://telegra.ph/file/b860df3e144c2208a7e5a.jpg",
+    "https://files.catbox.moe/bc5bx1.jpg",
 )
 
 GLOBAL_IMG_URL = getenv(
     "GLOBAL_IMG_URL",
-    "https://telegra.ph/file/a9d91437d795b0ae55af8.jpg",
+    "https://files.catbox.moe/bc5bx1.jpg",
 )
 
 STATS_IMG_URL = getenv(
     "STATS_IMG_URL",
-    "https://telegra.ph/file/a9d91437d795b0ae55af8.jpg",
+    "https://files.catbox.moe/bc5bx1.jpg",
 )
 
 TELEGRAM_AUDIO_URL = getenv(
     "TELEGRAM_AUDIO_URL",
-    "https://telegra.ph/file/84492c50c7a8a8d2603dc.jpg",
+    "https://files.catbox.moe/bc5bx1.jpg",
 )
 
 TELEGRAM_VIDEO_URL = getenv(
@@ -206,17 +206,17 @@ TELEGRAM_VIDEO_URL = getenv(
 
 STREAM_IMG_URL = getenv(
     "STREAM_IMG_URL",
-    "https://telegra.ph/file/62f26ca46103beee9a0d5.jpg",
+    "https://files.catbox.moe/bc5bx1.jpg",
 )
 
 SOUNCLOUD_IMG_URL = getenv(
     "SOUNCLOUD_IMG_URL",
-    "https://telegra.ph/file/9fbc748ad0d552e403ba6.jpg",
+    "https://files.catbox.moe/bc5bx1.jpg",
 )
 
 YOUTUBE_IMG_URL = getenv(
     "YOUTUBE_IMG_URL",
-    "https://telegra.ph/file/2433c1b98d2621623ead3.jpg",
+    "https://files.catbox.moe/bc5bx1.jpg",
 )
 
 SPOTIFY_ARTIST_IMG_URL = getenv(
@@ -226,12 +226,12 @@ SPOTIFY_ARTIST_IMG_URL = getenv(
 
 SPOTIFY_ALBUM_IMG_URL = getenv(
     "SPOTIFY_ALBUM_IMG_URL",
-    "https://telegra.ph/file/e17740f22da1fe4162e43.jpg",
+    "https://files.catbox.moe/bc5bx1.jpg",
 )
 
 SPOTIFY_PLAYLIST_IMG_URL = getenv(
     "SPOTIFY_PLAYLIST_IMG_URL",
-    "https://telegra.ph/file/010c936d41e9da782780f.jpg",
+    "https://files.catbox.moe/bc5bx1.jpg",
 )
 
 
@@ -272,7 +272,7 @@ if GITHUB_REPO:
 
 
 if PING_IMG_URL:
-    if PING_IMG_URL != "https://telegra.ph/file/33591be403ae3eaae7217.jpg":
+    if PING_IMG_URL != "https://files.catbox.moe/bc5bx1.jpg":
         if not re.match("(?:http|https)://", PING_IMG_URL):
             print(
                 "[ERROR] - Your PING_IMG_URL url is wrong. Please ensure that it starts with https://"
@@ -280,7 +280,7 @@ if PING_IMG_URL:
 
 
 if PLAYLIST_IMG_URL:
-    if PLAYLIST_IMG_URL != "https://telegra.ph/file/b860df3e144c2208a7e5a.jpg":
+    if PLAYLIST_IMG_URL != "https://files.catbox.moe/bc5bx1.jpg":
         if not re.match("(?:http|https)://", PLAYLIST_IMG_URL):
             print(
                 "[ERROR] - Your PLAYLIST_IMG_URL url is wrong. Please ensure that it starts with https://"
@@ -296,7 +296,7 @@ if GLOBAL_IMG_URL:
 
 
 if STATS_IMG_URL:
-    if STATS_IMG_URL != "https://telegra.ph/file/a9d91437d795b0ae55af8.jpg":
+    if STATS_IMG_URL != "https://files.catbox.moe/bc5bx1.jpg":
         if not re.match("(?:http|https)://", STATS_IMG_URL):
             print(
                 "[ERROR] - Your STATS_IMG_URL url is wrong. Please ensure that it starts with https://"
@@ -304,7 +304,7 @@ if STATS_IMG_URL:
 
 
 if TELEGRAM_AUDIO_URL:
-    if TELEGRAM_AUDIO_URL != "https://telegra.ph/file/84492c50c7a8a8d2603dc.jpg":
+    if TELEGRAM_AUDIO_URL != "https://files.catbox.moe/bc5bx1.jpg":
         if not re.match("(?:http|https)://", TELEGRAM_AUDIO_URL):
             print(
                 "[ERROR] - Your TELEGRAM_AUDIO_URL url is wrong. Please ensure that it starts with https://"
@@ -312,7 +312,7 @@ if TELEGRAM_AUDIO_URL:
 
 
 if STREAM_IMG_URL:
-    if STREAM_IMG_URL != "https://telegra.ph/file/62f26ca46103beee9a0d5.jpg":
+    if STREAM_IMG_URL != "https://files.catbox.moe/bc5bx1.jpg":
         if not re.match("(?:http|https)://", STREAM_IMG_URL):
             print(
                 "[ERROR] - Your STREAM_IMG_URL url is wrong. Please ensure that it starts with https://"
@@ -320,7 +320,7 @@ if STREAM_IMG_URL:
 
 
 if SOUNCLOUD_IMG_URL:
-    if SOUNCLOUD_IMG_URL != "https://telegra.ph/file/9fbc748ad0d552e403ba6.jpg":
+    if SOUNCLOUD_IMG_URL != "https://files.catbox.moe/bc5bx1.jpg":
         if not re.match("(?:http|https)://", SOUNCLOUD_IMG_URL):
             print(
                 "[ERROR] - Your SOUNCLOUD_IMG_URL url is wrong. Please ensure that it starts with https://"
@@ -328,7 +328,7 @@ if SOUNCLOUD_IMG_URL:
 
 
 if YOUTUBE_IMG_URL:
-    if YOUTUBE_IMG_URL != "https://telegra.ph/file/2433c1b98d2621623ead3.jpg":
+    if YOUTUBE_IMG_URL != "https://files.catbox.moe/bc5bx1.jpg":
         if not re.match("(?:http|https)://", YOUTUBE_IMG_URL):
             print(
                 "[ERROR] - Your YOUTUBE_IMG_URL url is wrong. Please ensure that it starts with https://"
@@ -336,7 +336,7 @@ if YOUTUBE_IMG_URL:
 
 
 if TELEGRAM_VIDEO_URL:
-    if TELEGRAM_VIDEO_URL != "https://telegra.ph/file/84492c50c7a8a8d2603dc.jpg":
+    if TELEGRAM_VIDEO_URL != "https://files.catbox.moe/bc5bx1.jpg":
         if not re.match("(?:http|https)://", TELEGRAM_VIDEO_URL):
             print(
                 "[ERROR] - Your TELEGRAM_VIDEO_URL url is wrong. Please ensure that it starts with https://"
