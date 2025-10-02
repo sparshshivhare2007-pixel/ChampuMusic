@@ -281,16 +281,16 @@ queue_5 : "ᴏɴʟʏ ᴏɴᴇ ᴛʀᴀᴄᴋ ɪs ɪɴ ǫᴜᴇᴜᴇ, ᴀᴅᴅ 
 cqueue_1 : "❖ ғᴇᴛᴄʜɪɴɢ ǫᴜᴇᴜᴇ...\n\nᴘʟᴇᴀsᴇ ᴡᴀɪᴛ..."
 cqueue_2 : "❖ ǫᴜᴇᴜᴇ ᴇᴍᴘᴛʏ."
 cqueue_3 : "❖ ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴄʜᴇᴄᴋ ᴛʜᴇ ʟɪsᴛ ᴏғ ᴛʜᴇ ǫᴜᴇᴜᴇᴅ ᴛʀᴀᴄᴋs ➥ <a href={0}>ʜᴇʀᴇ</a>"
-cqueue_4 : "<b><blockquote>❖ ɴᴇxᴛ sᴏɴɢ ᴀᴅᴅᴇᴅ ɪɴ ǫᴜᴇᴜᴇ ➥ #{0}</b></blockquote>\n<blockquote>⊛<b> ᴛɪᴛʟᴇ ➥</b> {1}\n<b>⊛ ᴅᴜʀᴀᴛɪᴏɴ ➥</b> {2} ᴍɪɴᴜᴛᴇs\n<b>⊛ ʙʏ ➥</b> {3}</blockquote>\n<blockquote><b>❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ @TheChampuClub</b></blockquote>"
+cqueue_4 : "<b><blockquote>❖ ɴᴇxᴛ sᴏɴɢ ᴀᴅᴅᴇᴅ ɪɴ ǫᴜᴇᴜᴇ ➥ #{0}</b></blockquote>\n<blockquote>⊛<b> ᴛɪᴛʟᴇ ➥</b> {1}\n<b>⊛ ᴅᴜʀᴀᴛɪᴏɴ ➥</b> {2} ᴍɪɴᴜᴛᴇs\n<b>⊛ ʙʏ ➥</b> {3}</blockquote>\n<blockquote><b>❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ @RIY_A_NETWORK</b></blockquote>"
 cqueue_5 : "❖ ᴛʜᴇʀᴇ's ᴏɴʟʏ ᴏɴᴇ ǫᴜᴇᴜᴇᴅ ᴛʀᴀᴄᴋ ɪɴ ᴘʟᴀʏʟɪsᴛ.\n\n● ᴀᴅᴅ ᴍᴏʀᴇ ᴛʀᴀᴄᴋs ᴛᴏ ᴄʜᴇᴄᴋ ʟɪsᴛ."
 cqueue_6 : "<b>❖ ᴅᴜʀᴀᴛɪᴏɴ ➥</b> ᴜɴᴋɴᴏᴡɴ ᴅᴜʀᴀᴛɪᴏɴ sᴛʀᴇᴀᴍ\n\n● ᴄʟɪᴄᴋ ᴏɴ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴡʜᴏʟᴇ ǫᴜᴇᴜᴇᴅ ʟɪsᴛ."
 cqueue_7 : "\n❖ ᴄʟɪᴄᴋ ᴏɴ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴡʜᴏʟᴇ ǫᴜᴇᴜᴇᴅ ʟɪsᴛ."
 cqueue_8 : "<b>❖ {0} ᴘʟᴀʏᴇʀ</b> ❖\n\n● <b>sᴛʀᴇᴀᴍɪɴɢ ➥</b> {1}\n\n● <b>sᴛʀᴇᴀᴍ ᴛʏᴘᴇ ➥</b> {2}\n● <b>ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ ➥</b> {3}\n{4}"
 
 # All Streaming Lines
-stream_1 : "<blockquote><b>❖ <a</a> sᴛʀᴇᴀᴍɪɴɢ ⏤͟͟͞͞★</b></blockquote>\n\n<b>⬤ ᴛɪᴛʟᴇ ➥</b> [{0}]({1})\n<b>⬤ ᴛɪᴍᴇ ➥</b> {2} ᴍɪɴᴜᴛᴇs\n<b>⬤ ʙʏ ➥</b> {3} \n\n<blockquote><b>❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ <a href=https://t.me/ChampuBots>ᴄʜᴧᴍᴘᴜ</a></b></blockquote>"
+stream_1 : "<blockquote><b>❖ <a</a> sᴛʀᴇᴀᴍɪɴɢ ⏤͟͟͞͞★</b></blockquote>\n\n<b>⬤ ᴛɪᴛʟᴇ ➥</b> [{0}]({1})\n<b>⬤ ᴛɪᴍᴇ ➥</b> {2} ᴍɪɴᴜᴛᴇs\n<b>⬤ ʙʏ ➥</b> {3} \n\n<blockquote><b>❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ <a href=https://t.me/RIY_A_NETWORK>Toxic</a></b></blockquote>"
 stream_2 : "<blockquote><b>❖ <a</a> sᴛʀᴇᴀᴍɪɴɢ ⏤͟͟͞͞★</b></blockquote>\n\n<b>⬤ ᴛɪᴛʟᴇ ➥</b> ʟɪᴠᴇ sᴛʀᴇᴀᴍ [ᴜʀʟ]\n⬤ ʙʏ ➥ {0}"
-cstream_1 : "<b><blockquote>◈ sᴛᴀʀᴛᴇᴅ sᴛʀᴇᴀᴍɪɴɢ</b></blockquote>\n<blockquote><b>⊛ ᴛɪᴛʟᴇ ➥</b> <a href={0}>{1}</a>\n<b>⊛ ᴅᴜʀᴀᴛɪᴏɴ ➥</b> {2} ᴍɪɴᴜᴛᴇs\n<b>⊛ ʙʏ ➥</b> {3}</blockquote>\n<blockquote><b>❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ @TheChampuClub</b></blockquote>"
+cstream_1 : "<b><blockquote>◈ sᴛᴀʀᴛᴇᴅ sᴛʀᴇᴀᴍɪɴɢ</b></blockquote>\n<blockquote><b>⊛ ᴛɪᴛʟᴇ ➥</b> <a href={0}>{1}</a>\n<b>⊛ ᴅᴜʀᴀᴛɪᴏɴ ➥</b> {2} ᴍɪɴᴜᴛᴇs\n<b>⊛ ʙʏ ➥</b> {3}</blockquote>\n<blockquote><b>❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ lll_TOXICC_PAPA_lll</b></blockquote>"
 cstream_2 : "<b><blockquote>◈ sᴛᴀʀᴛᴇᴅ sᴛʀᴇᴀᴍɪɴɢ</b></blockquote>\n<blockquote><b>⊛ sᴛʀᴇᴀᴍ ᴛʏᴘᴇ ➥</b> ʟɪᴠᴇ sᴛʀᴇᴀᴍ [ᴜʀʟ]\n<b>⊛ ʙʏ ➥</b> {0}</blockquote>\n<blockquote><b>❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ @TheChampuClub</b></blockquote>"
 
 
