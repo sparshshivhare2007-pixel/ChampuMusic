@@ -29,7 +29,6 @@ speedtest-cli
 spotipy
 tgcrypto
 urllib3
-uvloop
 google-api-python-client
 isodate
 git+https://github.com/TheChampu/pyrogram@master
