@@ -8,17 +8,21 @@ load_dotenv()
 
 
 # Get this value from my.telegram.org/apps
-API_ID = int(getenv("API_ID"))
+API_ID = int(getenv("API_ID", 0)) # Default to 0 to prevent errors if missing, but it must be set
 API_HASH = getenv("API_HASH")
 
 ## Get it from @Botfather in Telegram.
 BOT_TOKEN = getenv("BOT_TOKEN")
 
 # Get Your bot username
-BOT_USERNAME = getenv("BOT_USERNAME" , "toxicXmusic_bot")
+BOT_USERNAME = getenv("BOT_USERNAME", "toxicXmusic_bot")
 
 # Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+
+# YouTube Data API Key (REQUIRED for new YouTubeAPI)
+# Get from Google Cloud Console: https://console.cloud.google.com/
+YOUTUBE_API_KEY = getenv("YOUTUBE_API_KEY", None)
 
 CLEANMODE_DELETE_MINS = int(
     getenv("CLEANMODE_MINS", 5)
@@ -52,11 +56,11 @@ SONG_DOWNLOAD_DURATION = int(
 )  # Remember to give value in Minutes
 
 # You'll need a Private Group ID for this.
-LOGGER_ID = int(getenv("LOGGER_ID", None))
+LOGGER_ID = int(getenv("LOGGER_ID", 0))
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", 8299512910).split())
+    map(int, getenv("OWNER_ID", "8299512910").split())
 )  # Input type must be interger
 
 ## Fill these variables if you're deploying on heroku.
