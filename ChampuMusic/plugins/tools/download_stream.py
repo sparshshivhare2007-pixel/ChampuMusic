@@ -10,16 +10,14 @@ from youtubesearchpython import SearchVideos
 from yt_dlp import YoutubeDL
 
 from ChampuMusic import app
-from ChampuMusic.platforms.Youtube import cookies as cookie_txt_file
 
 # Define a dictionary to track the last query timestamp for each user
 user_last_CallbackQuery_time = {}
 user_CallbackQuery_count = {}
 
-# Define the threshold for query spamming (e.g., 1 query within 60 seconds)
+# Define the threshold for query spamming
 SPAM_THRESHOLD = 1
 SPAM_WINDOW_SECONDS = 30
-
 SPAM_AUDIO_THRESHOLD = 1
 SPAM_AUDIO_WINDOW_SECONDS = 30
 
@@ -80,6 +78,8 @@ async def download_video(client, CallbackQuery):
     await asyncio.sleep(0.6)
     url = mo
     sedlyf = wget.download(kekme)
+    
+    # Options without cookiefile
     opts = {
         "format": "best",
         "addmetadata": True,
@@ -91,7 +91,6 @@ async def download_video(client, CallbackQuery):
         "outtmpl": "%(id)s.mp4",
         "logtostderr": False,
         "quiet": True,
-        "cookiefile": cookie_txt_file(),
     }
     try:
         with YoutubeDL(opts) as ytdl:
@@ -145,14 +144,6 @@ async def download_video(client, CallbackQuery):
                 ]
             ),
         )
-
-
-import os
-import time
-
-# Dicts to keep track of user query count and last query time
-user_last_CallbackQuery_time = {}
-user_CallbackQuery_count = {}
 
 
 @app.on_callback_query(filters.regex("downloadaudio") & ~filters.user(BANNED_USERS))
@@ -209,6 +200,8 @@ async def download_audio(client, CallbackQuery):
     await asyncio.sleep(0.6)
     url = mo
     sedlyf = wget.download(kekme)
+    
+    # Options without cookiefile
     opts = {
         "format": "bestaudio/best",
         "addmetadata": True,
@@ -216,10 +209,9 @@ async def download_audio(client, CallbackQuery):
         "prefer_ffmpeg": True,
         "geo_bypass": True,
         "nocheckcertificate": True,
-        "outtmpl": "%(id)s.mp3",  # Output format changed to mp3
+        "outtmpl": "%(id)s.mp3",
         "logtostderr": False,
         "quiet": True,
-        "cookiefile": cookie_txt_file(),
     }
     try:
         with YoutubeDL(opts) as ytdl:
@@ -231,7 +223,7 @@ async def download_audio(client, CallbackQuery):
         )
         return
 
-    file_stark = f"{ytdl_data['id']}.mp3"  # Adjusted file extension
+    file_stark = f"{ytdl_data['id']}.mp3"
     capy = f"❄ **ᴛɪᴛʟᴇ :** [{thum}]({mo})\n\n💫 **ᴄʜᴀɴɴᴇʟ :** {thums}\n\n🥀 **ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ :** {chutiya}\n\n⏳ **ᴅᴜʀᴀᴛɪᴏɴ :** {int(ytdl_data['duration']) // 60}:{int(ytdl_data['duration']) % 60}"
     try:
         await client.send_audio(
